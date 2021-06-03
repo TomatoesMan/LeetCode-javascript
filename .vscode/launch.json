@@ -5,11 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-msedge",
+      "type": "node",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${file}",
+      "runtimeExecutable": "D:\\开发软件\\node\\node.exe"
     }
   ]
 }
