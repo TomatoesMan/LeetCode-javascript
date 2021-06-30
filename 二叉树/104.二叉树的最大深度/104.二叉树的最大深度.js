@@ -46,7 +46,6 @@
       while (queue.length) {
           res += 1;
           let len = queue.length;
-          console.log(queue)
           while (len--) {
               const n = queue.shift();
               if (n.left) {
